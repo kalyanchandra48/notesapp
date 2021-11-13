@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:notesapp/pages/notes_page/notes_page_components/create_note.dart';
 import 'package:notesapp/pages/notes_page/notesbox.dart';
+
 class Notesapp extends StatefulWidget {
   @override
   _NotesappState createState() => _NotesappState();

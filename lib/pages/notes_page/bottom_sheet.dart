@@ -32,9 +32,12 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
         vertical: height * 0.02,
       ),
       height: height / 2,
-      child: Column(
+      child: ListView(
         children: [
           TextField(
+            textInputAction: TextInputAction.newline,
+            keyboardType: TextInputType.multiline,
+            maxLines: null,
             controller: titleController,
             decoration: InputDecoration(
                 border: InputBorder.none, hintText: 'Enter a Title...'),
@@ -47,6 +50,9 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
             height: height / 38,
           ),
           TextField(
+            textInputAction: TextInputAction.newline,
+            keyboardType: TextInputType.multiline,
+            maxLines: null,
             controller: noteController,
             decoration: InputDecoration(
                 border: InputBorder.none, hintText: 'Enter a Notes...'),
